@@ -1,6 +1,11 @@
 // Complete the following functions.
 
 const nFibonacci = (n) => {
+  if (n === 0) return;
+  if (n <= 2) {
+    return n;
+  }
+  return nFibonacci(n - 1) + nFibonacci(n - 2);
   // fibonacci sequence: 1 2 3 5 8 13 ...
   // return the nth number in the sequence
 };
